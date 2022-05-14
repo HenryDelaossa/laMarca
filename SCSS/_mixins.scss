@@ -1,0 +1,8 @@
+// para centrar (el padre debe estar con position relative)
+@mixin center ($top, $left) {
+    position: absolute;
+        top: $top;
+        left: $left;
+        transform: translate(-50%, -50%);
+        perspective: 800px;
+}

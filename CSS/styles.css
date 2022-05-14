@@ -1,0 +1,257 @@
+.header_laMarca {
+  background-color: #000000;
+  padding: 0 15rem; }
+  .header_laMarca .navbar {
+    padding-top: 1rem;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.25); }
+    .header_laMarca .navbar .divCtn {
+      width: 100%; }
+      .header_laMarca .navbar .divCtn .navbar-brand {
+        margin: 0 auto; }
+        .header_laMarca .navbar .divCtn .navbar-brand .img_logotipoNavbar {
+          width: 220px; }
+      .header_laMarca .navbar .divCtn .collapse {
+        width: 100%;
+        flex-wrap: wrap-reverse; }
+        .header_laMarca .navbar .divCtn .collapse .navbar-nav {
+          margin: 0 auto;
+          flex-wrap: wrap; }
+          .header_laMarca .navbar .divCtn .collapse .navbar-nav .nav-item {
+            margin: 0 16px;
+            padding: 0; }
+            .header_laMarca .navbar .divCtn .collapse .navbar-nav .nav-item .nav-link {
+              color: rgba(245, 245, 245, 0.827);
+              text-transform: uppercase;
+              font-size: 12px; }
+        .header_laMarca .navbar .divCtn .collapse .ul_logosredesNavbar {
+          list-style-type: none;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          margin: auto auto;
+          margin-right: 0;
+          padding: 0; }
+          .header_laMarca .navbar .divCtn .collapse .ul_logosredesNavbar .li_logosRedesNavbar {
+            margin: 0 5px;
+            padding: 0; }
+            .header_laMarca .navbar .divCtn .collapse .ul_logosredesNavbar .li_logosRedesNavbar .img_redesSocialNavbar {
+              filter: invert(100%) sepia(0%) saturate(7467%) hue-rotate(131deg) brightness(99%) contrast(109%);
+              width: 28px;
+              height: auto; }
+  .header_laMarca .div_infoHeader {
+    width: 32%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .header_laMarca .div_infoHeader .ctn_div_infoHeader {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding-left: 1rem; }
+      .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn1_p-indicator_img-bgtext .p_indicator {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: rgba(245, 245, 245, 0.827);
+        word-wrap: break-word; }
+      .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn1_p-indicator_img-bgtext .img_bgtext {
+        width: 95%;
+        height: auto; }
+      .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn2_p-indicator_img-bgtext {
+        margin-top: .5rem; }
+        .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn2_p-indicator_img-bgtext p {
+          color: rgba(245, 245, 245, 0.827); }
+
+.section1_main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .section1_main .ctn_imgs_section1_main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; }
+    .section1_main .ctn_imgs_section1_main div {
+      position: absolute; }
+      .section1_main .ctn_imgs_section1_main div img {
+        width: 95%;
+        height: auto; }
+      .section1_main .ctn_imgs_section1_main div.divCtn_imgBack {
+        top: -100px; }
+      .section1_main .ctn_imgs_section1_main div.divCtn_imgManiq {
+        top: 100px;
+        padding-right: 3rem; }
+      .section1_main .ctn_imgs_section1_main div.divCtn_imgTextMen {
+        top: 170px;
+        padding-left: 1rem;
+        width: 85%; }
+  .section1_main .ctn_text_section1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    height: 100px;
+    align-items: center; }
+    .section1_main .ctn_text_section1 h4 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 300;
+      font-size: 2.7rem; }
+      .section1_main .ctn_text_section1 h4 span {
+        margin-left: 2rem; }
+    .section1_main .ctn_text_section1 div {
+      align-self: flex-start;
+      margin-left: 3rem; }
+
+.section2_main {
+  width: 100%;
+  margin: 0; }
+  .section2_main .ctn_part1 {
+    display: flex;
+    min-height: 400px;
+    justify-content: space-evenly;
+    background-image: url("../../assets/bg-asset-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5rem; }
+    .section2_main .ctn_part1 .div_ctnParrafo1_main {
+      margin-top: 3.7rem;
+      width: 300px;
+      display: flex;
+      align-items: flex-start; }
+      .section2_main .ctn_part1 .div_ctnParrafo1_main .parrafo1_section2_main {
+        font-weight: 500;
+        color: rgba(245, 245, 245, 0.827); }
+    .section2_main .ctn_part1 .div_ctnParrafo2_main {
+      width: 300px;
+      display: flex;
+      align-items: center; }
+      .section2_main .ctn_part1 .div_ctnParrafo2_main .parrafo2_section2_main {
+        font-weight: 500;
+        color: rgba(245, 245, 245, 0.827); }
+  .section2_main .ctn_part2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 400px; }
+    .section2_main .ctn_part2 .ctn_img_part2 {
+      width: 330px;
+      position: relative; }
+      .section2_main .ctn_part2 .ctn_img_part2 .img_izq_parte2 {
+        position: absolute;
+        top: -600px;
+        left: -150px; }
+    .section2_main .ctn_part2 .ctn_text_part2 {
+      width: 350px;
+      margin-left: 4rem;
+      margin-bottom: 3rem; }
+      .section2_main .ctn_part2 .ctn_text_part2 h4 {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-weight: 2rem;
+        margin-bottom: 2rem; }
+        .section2_main .ctn_part2 .ctn_text_part2 h4 span {
+          margin-left: 1.5rem; }
+
+.section3_main-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem; }
+  .section3_main-form h4 {
+    text-align: left;
+    padding-left: 17rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 3px; }
+    .section3_main-form h4 span {
+      margin-left: 2rem; }
+  .section3_main-form p {
+    padding-left: 17rem; }
+  .section3_main-form .form_main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 2rem; }
+    .section3_main-form .form_main .partLeft_form_laMarca {
+      width: 50%; }
+      .section3_main-form .form_main .partLeft_form_laMarca div {
+        width: 100%;
+        padding: .4rem; }
+        .section3_main-form .form_main .partLeft_form_laMarca div .inputs {
+          width: 100%;
+          background: lightgray;
+          border: none;
+          outline: none;
+          padding: .3rem; }
+          .section3_main-form .form_main .partLeft_form_laMarca div .inputs:focus {
+            outline: 1px solid gray; }
+    .section3_main-form .form_main .partRight_form_laMarca {
+      width: 50%; }
+      .section3_main-form .form_main .partRight_form_laMarca div {
+        width: 100%;
+        padding: .4rem; }
+        .section3_main-form .form_main .partRight_form_laMarca div .inputs {
+          width: 100%;
+          background: lightgray;
+          border: none;
+          outline: none;
+          padding: .3rem; }
+          .section3_main-form .form_main .partRight_form_laMarca div .inputs:focus {
+            outline: 1px solid gray; }
+      .section3_main-form .form_main .partRight_form_laMarca .div_checkTerminSubmit {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .section3_main-form .form_main .partRight_form_laMarca .div_checkTerminSubmit input {
+          width: min-content; }
+        .section3_main-form .form_main .partRight_form_laMarca .div_checkTerminSubmit label {
+          text-decoration: underline;
+          margin-left: .5rem; }
+        .section3_main-form .form_main .partRight_form_laMarca .div_checkTerminSubmit button {
+          float: right;
+          font-size: 14px;
+          letter-spacing: 2px;
+          background-color: #df9b06;
+          border: none;
+          padding: .2rem 1rem;
+          text-transform: uppercase; }
+
+.footer_laMarca {
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  bottom: 0;
+  margin-top: 3rem; }
+  .footer_laMarca p {
+    color: rgba(245, 245, 245, 0.827); }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: white; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  padding: .3rem; }

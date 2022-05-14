@@ -1,0 +1,89 @@
+.section3_main-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    h4 {
+        text-align: left;
+        padding-left: 17rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+        span {
+            margin-left: 2rem;
+        }
+    }
+    p {
+        padding-left: 17rem;
+    }
+    // formulario
+    .form_main {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 2rem;
+        // contenedor inputs izquierda
+        .partLeft_form_laMarca {
+            width: 50%;
+            div {
+                width: 100%;
+                padding: .4rem;
+                // aqui inputs izquierda
+                .inputs {
+                    width: 100%;
+                    background: lightgray;
+                    border: none;
+                    outline: none;
+                    padding: .3rem;
+                    &:focus {
+                        outline: 1px solid gray;
+                    }
+                }
+            }
+        }
+        // contenedor inputs derecha
+        .partRight_form_laMarca {
+            width: 50%;
+            div {
+                width: 100%;
+                padding: .4rem;
+                // aqui inputs derecha
+                .inputs {width: 100%;
+                    background: lightgray;
+                    border: none;
+                    outline: none;
+                    padding: .3rem;
+                    &:focus {
+                        outline: 1px solid gray;
+                    }
+                }
+            }
+            // div checkbox y btn submit
+            .div_checkTerminSubmit {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                input {
+                    width: min-content;
+                }
+                label {
+                    text-decoration: underline;
+                    margin-left: .5rem;
+                }
+                button {
+                    float: right;
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    background-color: $backBotones;
+                    border: none;
+                    padding: .2rem 1rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}

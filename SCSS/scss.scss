@@ -1,0 +1,34 @@
+@import "./mixins";
+@import "./variables";
+@import "./navBar/navbar";
+@import "./seccion1/seccionUno";
+@import "./seccion1/responsiveSeccionUno";
+@import "./seccion2/seccionDos";
+@import "./seccion3_form/seccionTresForm";
+@import "./footer/footer";
+
+
+
+// generales
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: white;
+}
+// para quitar flechitas a inputs type nuber
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+// placeholders inputs
+input::-webkit-input-placeholder {
+    text-transform: uppercase;
+    padding: .3rem;
+}

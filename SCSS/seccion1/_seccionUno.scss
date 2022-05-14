@@ -1,0 +1,54 @@
+.section1_main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // contenedor imagenes
+    .ctn_imgs_section1_main {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        div {
+            position: absolute;
+            img {
+                width: 95%;
+                height: auto;
+            }
+            &.divCtn_imgBack {
+                top: -100px;
+            }
+            &.divCtn_imgManiq {
+                top: 100px;
+                padding-right: 3rem;
+            }
+            &.divCtn_imgTextMen {
+                top: 170px;
+                padding-left: 1rem;
+                width: 85%;
+            }
+        }
+    }
+    // contenedor texto debajo de imagenes superpuestas
+    .ctn_text_section1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        height: 100px;
+        align-items: center;
+        h4 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 300;
+            font-size: 2.7rem;
+            span {
+                margin-left: 2rem;
+            }
+        }
+        div {
+            align-self: flex-start;
+            margin-left: 3rem;
+        }
+    }
+}
