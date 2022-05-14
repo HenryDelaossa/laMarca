@@ -1,14 +1,74 @@
 @media screen and (max-width: 1200px) {
-    
-    
+    .section1_main {
+        // contenedor imagenes
+        .ctn_imgs_section1_main {
+            min-height: 75vh;
+            div {
+                &.divCtn_imgBack {
+                    top: -100px;
+                    width: 60%;
+                }
+                &.divCtn_imgManiq {
+                    top: 30px;
+                    width: 21%;
+                }
+                &.divCtn_imgTextMen {
+                    top: 120px;
+                    width: 75%;
+                }
+            }
+        }
+        // contenedor texto debajo de imagenes superpuestas
+        .ctn_text_section1 {
+            height: 70px;
+            h4 {
+                font-size: 1.5rem;
+                span {
+                    margin-left: 1rem;
+                }
+            }
+            div {
+                img {
+                    width: 60px;
+                }
+            }
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
+// RESPONSIVE LAPTOS PEQUEÑÁS
+@media screen and (max-width: 992px) {
+    .section1_main {
+        // contenedor imagenes
+        .ctn_imgs_section1_main {
+            min-height: 60vh;
+            div {
+                &.divCtn_imgBack {
+                    top: -120px;
+                }
+                &.divCtn_imgManiq {
+                    top: 10px;
+                }
+                &.divCtn_imgTextMen {
+                    top: 60px;
+                }
+            }
+        }
+        // contenedor texto debajo de imagenes superpuestas
+        .ctn_text_section1 {
+            height: 50px;
+            margin-top: 2rem;
+            h4 {
+                font-size: 1.5rem;
+                span {
+                    margin-left: 1rem;
+                }
+            }
+            div {
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
 }

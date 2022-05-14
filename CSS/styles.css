@@ -10,37 +10,45 @@
       .header_laMarca .navbar .divCtn .navbar-brand {
         margin: 0 auto; }
         .header_laMarca .navbar .divCtn .navbar-brand .img_logotipoNavbar {
-          width: 220px; }
-      .header_laMarca .navbar .divCtn .collapse {
+          width: 180px; }
+      .header_laMarca .navbar .divCtn .navbar-toggler {
+        background-color: #df9b06; }
+      .header_laMarca .navbar .divCtn .collap {
         width: 100%;
         flex-wrap: wrap-reverse; }
-        .header_laMarca .navbar .divCtn .collapse .navbar-nav {
+        .header_laMarca .navbar .divCtn .collap .navbar-nav {
+          width: 100%;
           margin: 0 auto;
-          flex-wrap: wrap; }
-          .header_laMarca .navbar .divCtn .collapse .navbar-nav .nav-item {
-            margin: 0 16px;
+          justify-content: space-evenly;
+          flex-wrap: wrap-reverse;
+          align-items: flex-start; }
+          .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item {
+            margin: 0 10px;
             padding: 0; }
-            .header_laMarca .navbar .divCtn .collapse .navbar-nav .nav-item .nav-link {
+            .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item .nav-link {
               color: rgba(245, 245, 245, 0.827);
               text-transform: uppercase;
-              font-size: 12px; }
-        .header_laMarca .navbar .divCtn .collapse .ul_logosredesNavbar {
-          list-style-type: none;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          margin: auto auto;
-          margin-right: 0;
-          padding: 0; }
-          .header_laMarca .navbar .divCtn .collapse .ul_logosredesNavbar .li_logosRedesNavbar {
-            margin: 0 5px;
-            padding: 0; }
-            .header_laMarca .navbar .divCtn .collapse .ul_logosredesNavbar .li_logosRedesNavbar .img_redesSocialNavbar {
-              filter: invert(100%) sepia(0%) saturate(7467%) hue-rotate(131deg) brightness(99%) contrast(109%);
-              width: 28px;
-              height: auto; }
+              font-size: 14px;
+              padding: 0;
+              font-weight: 400;
+              text-align: justify; }
+            .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item .ul_logosredesNavbar {
+              list-style-type: none;
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              margin: auto auto;
+              margin-right: 0;
+              padding: 0; }
+              .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item .ul_logosredesNavbar .li_logosRedesNavbar {
+                margin: 0 5px;
+                padding: 0; }
+                .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item .ul_logosredesNavbar .li_logosRedesNavbar .img_redesSocialNavbar {
+                  filter: invert(100%) sepia(0%) saturate(7467%) hue-rotate(131deg) brightness(99%) contrast(109%);
+                  width: 28px;
+                  height: auto; }
   .header_laMarca .div_infoHeader {
-    width: 32%;
+    width: 35%;
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -63,6 +71,41 @@
         .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn2_p-indicator_img-bgtext p {
           color: rgba(245, 245, 245, 0.827); }
 
+@media screen and (max-width: 1200px) {
+  .header_laMarca {
+    padding: 0 8rem; }
+    .header_laMarca .navbar .divCtn .navbar-brand .img_logotipoNavbar {
+      width: 150px; }
+    .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item .nav-link {
+      font-size: 12px; }
+    .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item .ul_logosredesNavbar .li_logosRedesNavbar .img_redesSocialNavbar {
+      width: 24px; }
+    .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn1_p-indicator_img-bgtext .p_indicator {
+      font-size: 1rem; }
+    .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn1_p-indicator_img-bgtext .img_bgtext {
+      width: 90%; }
+    .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn2_p-indicator_img-bgtext p {
+      color: rgba(245, 245, 245, 0.827);
+      font-size: .8rem; } }
+
+@media screen and (max-width: 992px) {
+  .header_laMarca .navbar .divCtn {
+    display: flex;
+    justify-content: space-between; }
+    .header_laMarca .navbar .divCtn .navbar-brand {
+      margin: 0; }
+      .header_laMarca .navbar .divCtn .navbar-brand .img_logotipoNavbar {
+        width: 200px; }
+    .header_laMarca .navbar .divCtn .collap .navbar-nav {
+      align-items: center; }
+      .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item {
+        margin-bottom: 1rem; }
+        .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item .nav-link {
+          letter-spacing: 3px; }
+        .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item .ul_logosredesNavbar .li_logosRedesNavbar .img_redesSocialNavbar {
+          width: 36px;
+          margin: 0 1rem; } }
+
 .section1_main {
   width: 100%;
   height: auto;
@@ -82,8 +125,8 @@
       .section1_main .ctn_imgs_section1_main div.divCtn_imgBack {
         top: -100px; }
       .section1_main .ctn_imgs_section1_main div.divCtn_imgManiq {
-        top: 100px;
-        padding-right: 3rem; }
+        top: 90px;
+        padding-right: 4rem; }
       .section1_main .ctn_imgs_section1_main div.divCtn_imgTextMen {
         top: 170px;
         padding-left: 1rem;
@@ -91,19 +134,60 @@
   .section1_main .ctn_text_section1 {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
     height: 100px;
     align-items: center; }
     .section1_main .ctn_text_section1 h4 {
       text-transform: uppercase;
       letter-spacing: 2px;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 2.7rem; }
       .section1_main .ctn_text_section1 h4 span {
         margin-left: 2rem; }
     .section1_main .ctn_text_section1 div {
-      align-self: flex-start;
+      align-self: flex-end;
       margin-left: 3rem; }
+
+@media screen and (max-width: 1200px) {
+  .section1_main .ctn_imgs_section1_main {
+    min-height: 75vh; }
+    .section1_main .ctn_imgs_section1_main div.divCtn_imgBack {
+      top: -100px;
+      width: 60%; }
+    .section1_main .ctn_imgs_section1_main div.divCtn_imgManiq {
+      top: 30px;
+      width: 21%; }
+    .section1_main .ctn_imgs_section1_main div.divCtn_imgTextMen {
+      top: 120px;
+      width: 75%; }
+  .section1_main .ctn_text_section1 {
+    height: 70px; }
+    .section1_main .ctn_text_section1 h4 {
+      font-size: 1.5rem; }
+      .section1_main .ctn_text_section1 h4 span {
+        margin-left: 1rem; }
+    .section1_main .ctn_text_section1 div img {
+      width: 60px; } }
+
+@media screen and (max-width: 992px) {
+  .section1_main .ctn_imgs_section1_main {
+    min-height: 60vh; }
+    .section1_main .ctn_imgs_section1_main div.divCtn_imgBack {
+      top: -120px; }
+    .section1_main .ctn_imgs_section1_main div.divCtn_imgManiq {
+      top: 10px; }
+    .section1_main .ctn_imgs_section1_main div.divCtn_imgTextMen {
+      top: 60px; }
+  .section1_main .ctn_text_section1 {
+    height: 50px;
+    margin-top: 2rem; }
+    .section1_main .ctn_text_section1 h4 {
+      font-size: 1.5rem; }
+      .section1_main .ctn_text_section1 h4 span {
+        margin-left: 1rem; }
+    .section1_main .ctn_text_section1 div img {
+      width: 50px; } }
 
 .section2_main {
   width: 100%;
@@ -126,6 +210,7 @@
         color: rgba(245, 245, 245, 0.827); }
     .section2_main .ctn_part1 .div_ctnParrafo2_main {
       width: 300px;
+      height: auto;
       display: flex;
       align-items: center; }
       .section2_main .ctn_part1 .div_ctnParrafo2_main .parrafo2_section2_main {
@@ -137,34 +222,87 @@
     align-items: flex-end;
     min-height: 400px; }
     .section2_main .ctn_part2 .ctn_img_part2 {
-      width: 330px;
+      width: 370px;
       position: relative; }
       .section2_main .ctn_part2 .ctn_img_part2 .img_izq_parte2 {
         position: absolute;
+        width: 100%;
         top: -600px;
-        left: -150px; }
+        left: 0px; }
     .section2_main .ctn_part2 .ctn_text_part2 {
+      align-self: flex-start;
       width: 350px;
-      margin-left: 4rem;
+      margin: 3rem 0 0 4rem;
       margin-bottom: 3rem; }
       .section2_main .ctn_part2 .ctn_text_part2 h4 {
         text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 4px;
-        font-weight: 2rem;
+        font-size: 2rem;
         margin-bottom: 2rem; }
-        .section2_main .ctn_part2 .ctn_text_part2 h4 span {
-          margin-left: 1.5rem; }
+
+@media screen and (max-width: 1200px) {
+  .section2_main .ctn_part1 {
+    min-height: 300px; }
+    .section2_main .ctn_part1 .div_ctnParrafo1_main {
+      width: 250px; }
+      .section2_main .ctn_part1 .div_ctnParrafo1_main .parrafo1_section2_main {
+        font-weight: 400;
+        font-size: 14px; }
+    .section2_main .ctn_part1 .div_ctnParrafo2_main {
+      width: 250px; }
+      .section2_main .ctn_part1 .div_ctnParrafo2_main .parrafo2_section2_main {
+        font-weight: 500;
+        font-size: 12px; }
+  .section2_main .ctn_part2 {
+    min-height: 300px; }
+    .section2_main .ctn_part2 .ctn_img_part2 {
+      width: 300px;
+      position: relative; }
+      .section2_main .ctn_part2 .ctn_img_part2 .img_izq_parte2 {
+        top: -400px; }
+    .section2_main .ctn_part2 .ctn_text_part2 h4 {
+      font-size: 1.5rem; }
+    .section2_main .ctn_part2 .ctn_text_part2 p {
+      font-weight: 400; } }
+
+@media screen and (max-width: 992px) {
+  .section2_main .ctn_part1 {
+    min-height: 270px;
+    background-size: contain; }
+    .section2_main .ctn_part1 .div_ctnParrafo1_main {
+      margin-top: 2rem; }
+      .section2_main .ctn_part1 .div_ctnParrafo1_main .parrafo1_section2_main {
+        font-size: 12px; }
+    .section2_main .ctn_part1 .div_ctnParrafo2_main {
+      align-self: flex-start;
+      margin-top: 2rem; }
+      .section2_main .ctn_part1 .div_ctnParrafo2_main .parrafo2_section2_main {
+        font-size: 11px; }
+  .section2_main .ctn_part2 {
+    min-height: 250px; }
+    .section2_main .ctn_part2 .ctn_img_part2 {
+      width: 300px;
+      position: relative; }
+      .section2_main .ctn_part2 .ctn_img_part2 .img_izq_parte2 {
+        top: -400px;
+        left: 50px; }
+    .section2_main .ctn_part2 .ctn_text_part2 {
+      margin: -2rem 0 0 4rem; }
+      .section2_main .ctn_part2 .ctn_text_part2 h4 {
+        font-size: 1.5rem; }
+      .section2_main .ctn_part2 .ctn_text_part2 p {
+        font-weight: 400;
+        font-size: 12px; } }
 
 .section3_main-form {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 4rem; }
+  flex-direction: column; }
   .section3_main-form h4 {
     text-align: left;
-    padding-left: 17rem;
+    padding-left: 12rem;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 400;

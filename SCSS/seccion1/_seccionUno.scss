@@ -20,8 +20,8 @@
                 top: -100px;
             }
             &.divCtn_imgManiq {
-                top: 100px;
-                padding-right: 3rem;
+                top: 90px;
+                padding-right: 4rem;
             }
             &.divCtn_imgTextMen {
                 top: 170px;
@@ -34,20 +34,21 @@
     .ctn_text_section1 {
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
         height: 100px;
         align-items: center;
         h4 {
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 2.7rem;
             span {
                 margin-left: 2rem;
             }
         }
         div {
-            align-self: flex-start;
+            align-self: flex-end;
             margin-left: 3rem;
         }
     }

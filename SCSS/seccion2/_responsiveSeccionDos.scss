@@ -1,0 +1,96 @@
+@media screen and (max-width: 1200px) {
+    .section2_main {
+        // contenedor parte 1, superior
+        .ctn_part1 {
+            min-height: 300px;
+            // contenedor parrafo izquierdo
+            .div_ctnParrafo1_main {
+                width: 250px;
+                .parrafo1_section2_main {
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+            // contenedor parrafo derecho
+            .div_ctnParrafo2_main {
+                width: 250px;
+                .parrafo2_section2_main {
+                    font-weight: 500;
+                    font-size: 12px;;
+                }
+            }
+        }
+        // contenedor parte 2, inferior
+        .ctn_part2 {
+            min-height: 300px;
+            // contenedor imagen izquierda inferior
+            .ctn_img_part2 {
+                width: 300px;
+                position: relative;
+                .img_izq_parte2 {
+                    top: -400px;
+                }
+            }
+            // contenedor texto derecho inferior
+            .ctn_text_part2 {
+                h4 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE LAPTOS PEQUEÑÁS
+@media screen and (max-width: 992px) {
+    .section2_main {
+        // contenedor parte 1, superior
+        .ctn_part1 {
+            min-height: 270px;
+            background-size: contain;
+            // contenedor parrafo izquierdo
+            .div_ctnParrafo1_main {
+                margin-top: 2rem;
+                .parrafo1_section2_main {
+                    font-size: 12px;
+                }
+            }
+            // contenedor parrafo derecho
+            .div_ctnParrafo2_main {
+                align-self: flex-start;
+                margin-top: 2rem;
+                .parrafo2_section2_main {
+                    font-size: 11px;;
+                }
+            }
+        }
+        // contenedor parte 2, inferior
+        .ctn_part2 {
+            min-height: 250px;
+            // contenedor imagen izquierda inferior
+            .ctn_img_part2 {
+                width: 300px;
+                position: relative;
+                .img_izq_parte2 {
+                    top: -400px;
+                    left: 50px;
+                }
+            }
+            // contenedor texto derecho inferior
+            .ctn_text_part2 {
+                margin: -2rem 0 0 4rem;
+                h4 {
+                    font-size: 1.5rem;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+ }

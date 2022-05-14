@@ -24,6 +24,7 @@
         // contenedor parrafo derecho
         .div_ctnParrafo2_main {
             width: 300px;
+            height: auto;
             display: flex;
             align-items: center;
             .parrafo2_section2_main {
@@ -40,28 +41,27 @@
         min-height: 400px;
         // contenedor imagen izquierda inferior
         .ctn_img_part2 {
-            width: 330px;
+            width: 370px;
             position: relative;
             .img_izq_parte2 {
                 position: absolute;
+                width: 100%;
                 top: -600px;
-                left: -150px;
+                left: 0px;
             }
         }
         // contenedor texto derecho inferior
         .ctn_text_part2 {
+            align-self: flex-start;
             width: 350px;
-            margin-left: 4rem;
+            margin: 3rem 0 0 4rem;
             margin-bottom: 3rem;
             h4 {
                 text-transform: uppercase;
                 font-weight: 400;
                 letter-spacing: 4px;
-                font-weight: 2rem;
+                font-size: 2rem;
                 margin-bottom: 2rem;
-                span {
-                    margin-left: 1.5rem;
-                }
             }
         }
     }
