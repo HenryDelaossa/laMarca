@@ -9,24 +9,18 @@
         position: relative;
         display: flex;
         justify-content: center;
-        min-height: 100vh;
-        div {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 4rem;
+        min-height: 700px;
+        .divCtn_imgBack {
             position: absolute;
-            img {
-                width: 95%;
+            width: 90%;
+            text-align: center;
+            top: -100px;
+            .imgs_seccion1 {
+                width: 90%;
                 height: auto;
-            }
-            &.divCtn_imgBack {
-                top: -100px;
-            }
-            &.divCtn_imgManiq {
-                top: 90px;
-                padding-right: 4rem;
-            }
-            &.divCtn_imgTextMen {
-                top: 170px;
-                padding-left: 1rem;
-                width: 85%;
             }
         }
     }
@@ -34,7 +28,7 @@
     .ctn_text_section1 {
         display: flex;
         justify-content: center;
-        margin-top: 7rem;
+        padding-top: 12rem;
         margin-bottom: 2rem;
         height: 100px;
         align-items: center;
@@ -42,7 +36,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             font-weight: 400;
-            font-size: 2.7rem;
+            font-size: 2rem;
             span {
                 margin-left: 2rem;
             }

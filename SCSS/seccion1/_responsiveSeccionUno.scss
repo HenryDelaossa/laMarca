@@ -2,25 +2,17 @@
     .section1_main {
         // contenedor imagenes
         .ctn_imgs_section1_main {
-            min-height: 75vh;
-            div {
-                &.divCtn_imgBack {
-                    top: -100px;
-                    width: 60%;
-                }
-                &.divCtn_imgManiq {
-                    top: 30px;
-                    width: 21%;
-                }
-                &.divCtn_imgTextMen {
-                    top: 120px;
-                    width: 75%;
+            min-height: 490px;
+
+            .divCtn_imgBack {
+                .imgs_seccion1 {
+                    width: 100%;
                 }
             }
         }
         // contenedor texto debajo de imagenes superpuestas
         .ctn_text_section1 {
-            height: 70px;
+            padding-top: 13rem;
             h4 {
                 font-size: 1.5rem;
                 span {
@@ -41,23 +33,14 @@
     .section1_main {
         // contenedor imagenes
         .ctn_imgs_section1_main {
-            min-height: 60vh;
-            div {
-                &.divCtn_imgBack {
-                    top: -120px;
-                }
-                &.divCtn_imgManiq {
-                    top: 10px;
-                }
-                &.divCtn_imgTextMen {
-                    top: 60px;
-                }
+            min-height: 480px;
+            .divCtn_imgBack {
+                top: -80px;
             }
         }
         // contenedor texto debajo de imagenes superpuestas
         .ctn_text_section1 {
-            height: 50px;
-            margin-top: 2rem;
+            padding-top: 6rem;
             h4 {
                 font-size: 1.5rem;
                 span {
@@ -69,6 +52,66 @@
                     width: 50px;
                 }
             }
+        }
+    }
+}
+
+
+// RESPONSIVVE TABLETS
+@media screen and (max-width: 768px) {
+    .section1_main {
+        // contenedor imagenes
+        .ctn_imgs_section1_main {
+            .divCtn_imgBack {
+                top: 10px;
+            }
+        }
+        // contenedor texto debajo de imagenes superpuestas
+        .ctn_text_section1 {
+            padding-top: 3rem;
+            h4 {
+                font-size: .7rem;
+
+                span {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+// RESPONSIVVE MOBILES
+@media screen and (max-width: 600px) {
+    .section1_main {
+        // contenedor imagenes
+        .ctn_imgs_section1_main {
+            min-height: 400px;
+
+        }
+        // contenedor texto debajo de imagenes superpuestas
+        .ctn_text_section1 {
+            height: 40px;
+            padding-top: 0;
+            h4 {
+                font-size: .7rem;
+                span {
+                    margin-left: 1rem;
+                }
+            }
+            div {
+                align-self: flex-start;
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .section1_main {
+        .ctn_imgs_section1_main {
+            min-height: 270px;
         }
     }
 }

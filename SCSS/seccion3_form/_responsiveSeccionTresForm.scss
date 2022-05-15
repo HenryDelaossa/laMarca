@@ -1,0 +1,106 @@
+@media screen and (max-width: 1200px) {
+    .section3_main-form {
+
+        // titulo news letter
+        // parrafo newsletter
+        p {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        // formulario
+        .form_main {
+            width: 90%;
+        }
+    }
+}
+
+// RESPONSIVE LAPTOPS PEQUEÑAS
+@media screen and (max-width: 992px) {
+    .section3_main-form {
+        // titulo newsletter
+        h4 {
+            font-size: 2rem;
+        }
+        p {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+
+        // formulario
+        .form_main {
+            flex-direction: column;
+            width: 75%;
+            .partLeft_form_laMarca {
+                width: 80%;
+                margin: 0 auto;
+            }
+            .partRight_form_laMarca {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+// RESPONSIVE TABLETS
+@media screen and (max-width: 768px) {
+    .section3_main-form {
+        margin-top: 0;
+        // titulo newsletter
+        h4 {
+            font-size: 1.7rem;
+            width: 85%;
+            margin: 0 auto;
+        }
+        p {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+
+        // formulario
+        .form_main {
+            width: 90%;
+        }
+    }
+}
+
+
+// RESPONSIVE MOBILES
+@media screen and (max-width: 600px) {
+    .section3_main-form {
+        margin-top: 3rem;
+        // titulo newsletter
+        h4 {
+            margin-bottom: 1.5rem;
+        }
+        p {
+            font-size: 1.2  rem;
+        }
+
+        // formulario
+        .form_main {
+            width: 95%;
+            // div checkbox y btn submit
+            .div_checkTerminSubmit {
+                flex-direction: column;
+                justify-content: center;
+                // contenedor checkbox term y cond
+                .div_ctnCheckbox {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                // contenedor button submit
+                .div_ctnButtom {
+                    width: 50%;
+                    margin: 0 auto;
+                    
+                }
+
+            }
+        }
+    }
+}

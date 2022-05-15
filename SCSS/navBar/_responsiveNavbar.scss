@@ -5,7 +5,6 @@
         .navbar {
             .divCtn {
                 .navbar-brand {
-
                     // logotipo navbar
                     .img_logotipoNavbar {
                         width: 150px;
@@ -31,6 +30,7 @@
                 }
             }
         }
+
         // contenedor texto info header
         .div_infoHeader {
             .ctn_div_infoHeader {
@@ -44,6 +44,7 @@
                         width: 90%;
                     }
                 }
+
                 // contenedor texto infoHeader
                 .ctn2_p-indicator_img-bgtext {
                     p {
@@ -62,41 +63,30 @@
 @media screen and (max-width: 992px) {
     .header_laMarca {
         .navbar {
-
             .divCtn {
                 display: flex;
                 justify-content: space-between;
 
                 .navbar-brand {
                     margin: 0;
-
                     // logotipo navbar
                     .img_logotipoNavbar {
                         width: 200px;
                     }
                 }
-
-                // boton hamburguesa
-
-
                 // div contenedor items Navbar
                 .collap {
                     .navbar-nav {
                         align-items: center;
-
                         .nav-item {
                             margin-bottom: 1rem;
-
                             // items 
                             .nav-link {
                                 letter-spacing: 3px;
                             }
-
                             // ul logos redes navbar 
                             .ul_logosredesNavbar {
-
                                 .li_logosRedesNavbar {
-
                                     // logos redes navbar
                                     .img_redesSocialNavbar {
                                         width: 36px;
@@ -110,5 +100,110 @@
             }
         }
         // info header la marca
+        .div_infoHeader {
+            .ctn_div_infoHeader {
+                .ctn1_p-indicator_img-bgtext {
+                    .p_indicator {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// RESPONSIVE TABLETS
+@media screen and(max-width: 768px) {
+    .header_laMarca {
+        padding: 0 3rem;
+        .navbar {
+            .divCtn {
+                .navbar-brand {
+                    // logotipo navbar
+                    .img_logotipoNavbar {
+                        width: 180px;
+                    }
+                }
+                // div contenedor items Navbar
+                .collap {
+                    .navbar-nav {
+                        align-items: center;
+                        margin-top: 1rem;
+                        .nav-item {
+                            margin-bottom: 1rem;
+                            // items 
+                            .nav-link {
+                                letter-spacing: 3px;
+                                font-size: 12px;
+                            }
+                            // ul logos redes navbar 
+                            .ul_logosredesNavbar {
+                                .li_logosRedesNavbar {
+                                    // logos redes navbar
+                                    .img_redesSocialNavbar {
+                                        width: 36px;
+                                        margin: 0 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // contenedor texto info header
+        .div_infoHeader {
+            width: 100%;
+            .ctn_div_infoHeader {
+                .ctn1_p-indicator_img-bgtext {
+                    text-align: center;
+                    .p_indicator {
+                        font-size: .6rem;
+                    }
+
+                    // imagen texto la marca
+                    .img_bgtext {
+                        width: 50%;
+                        text-align: center;
+                    }
+                }
+                // contenedor texto infoHeader
+                .ctn2_p-indicator_img-bgtext {
+                    text-align: center;
+                    p {
+                        font-size: .8rem;
+                        padding: 1rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .header_laMarca {
+        padding: 0 3rem;
+        .navbar {
+            .divCtn {
+                flex-direction: column;
+                .navbar-brand {
+                    text-align: center;
+                    // logotipo navbar
+                    .img_logotipoNavbar {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+         // contenedor texto info header
+         .div_infoHeader {
+            .ctn_div_infoHeader {
+                // contenedor texto infoHeader
+                .ctn2_p-indicator_img-bgtext {
+                    p {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
     }
 }

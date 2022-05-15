@@ -3,33 +3,36 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 3.5rem;
+    text-align: center;
+
     h4 {
-        text-align: left;
-        padding-left: 12rem;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 2.3rem;
         font-weight: 400;
-        letter-spacing: 3px;
-        span {
-            margin-left: 2rem;
-        }
+        letter-spacing: 4px;
     }
+
     p {
-        padding-left: 17rem;
+        font-size: 1.2rem;
     }
+
     // formulario
     .form_main {
         display: flex;
         justify-content: space-evenly;
         margin: 0 auto;
-        width: 70%;
+        width: 80%;
         margin-top: 2rem;
+
         // contenedor inputs izquierda
         .partLeft_form_laMarca {
             width: 50%;
+
             div {
                 width: 100%;
                 padding: .4rem;
+
                 // aqui inputs izquierda
                 .inputs {
                     width: 100%;
@@ -37,51 +40,61 @@
                     border: none;
                     outline: none;
                     padding: .3rem;
+
                     &:focus {
                         outline: 1px solid gray;
                     }
                 }
             }
         }
+
         // contenedor inputs derecha
         .partRight_form_laMarca {
             width: 50%;
             div {
                 width: 100%;
                 padding: .4rem;
+
                 // aqui inputs derecha
-                .inputs {width: 100%;
+                .inputs {
+                    width: 100%;
                     background: lightgray;
                     border: none;
                     outline: none;
                     padding: .3rem;
+
                     &:focus {
                         outline: 1px solid gray;
                     }
                 }
             }
+
             // div checkbox y btn submit
             .div_checkTerminSubmit {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                input {
-                    width: min-content;
+                padding: 0;
+                // contenedor checkbox term y cond
+                .div_ctnCheckbox {
+                    text-align: left;
+                    input {
+                        width: min-content;
+                    }
+                    label {
+                        text-decoration: underline;
+                        margin-left: .5rem;
+                    }
                 }
-                label {
-                    text-decoration: underline;
-                    margin-left: .5rem;
+                // contenedor button submit
+                .div_ctnButtom {
+                    width: 40%;
+                    button {
+                        @include botones (.2rem 1rem);
+                    }
                 }
-                button {
-                    float: right;
-                    font-size: 14px;
-                    letter-spacing: 2px;
-                    background-color: $backBotones;
-                    border: none;
-                    padding: .2rem 1rem;
-                    text-transform: uppercase;
-                }
+
             }
         }
     }

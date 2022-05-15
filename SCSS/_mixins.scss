@@ -1,8 +1,42 @@
-// para centrar (el padre debe estar con position relative)
-@mixin center ($top, $left) {
-    position: absolute;
-        top: $top;
-        left: $left;
-        transform: translate(-50%, -50%);
-        perspective: 800px;
+// para botones
+@mixin botones ($padding) {
+    letter-spacing: 2px;
+    background-color: $bg1_botones;
+    border: none;
+    padding: $padding;
+    text-transform: uppercase;
+    transition: .2s all;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+// hover sobre items (reutillizable)
+@mixin effectItems {
+    position: relative;
+    color: $colorItemsNavBar;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0;
+    font-weight: 400;
+    text-align: justify;
+    &::before {
+        content: " ";
+        position: absolute;
+        top: unset;
+        bottom: -9px;
+        left: -2.5%;
+        background-color: $underLineNavbar;
+        width: 0;
+        height: 2px;
+        transition: .2s all;
+    }
+    &:hover {
+        color: $underLineNavbar;
+        &::before {
+            right: 0;
+            width: 110%;
+        }
+    }
 }
