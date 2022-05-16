@@ -137,26 +137,31 @@
             <h4>suscribete a nuestro newsletter <span>|</span></h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, odio. Non, asperiores r sit amet
                 consectetur adipisicing el</p>
-            <form class="form_main">
+            <form class="form_main" id="form_contacto-main" >
                 <!-- inputs left -->
                 <div class="partLeft_form_laMarca">
                     <div>
-                        <input class="inputs" type="text" placeholder="nombre" required>
+                        <input class="inputs" type="text" placeholder="nombre" required name="nombre">
                     </div>
                     <div>
-                        <input class="inputs" type="text" placeholder="tipo de documento" required>
+                        <select class="inputs" name="selectForm" id="selectForm" >
+                            <option hidden selected>TIPO DE DOCUMENTO</option>
+                            <option value="CC">CC</option>
+                            <option value="NIT">NIT</option>
+                            <option value="CE">CE</option>
+                        </select>
                     </div>
                     <div>
-                        <input class="inputs" type="number" placeholder="telefono" required>
+                        <input class="inputs" type="number" placeholder="telefono" required name="telefono">
                     </div>
                 </div>
                 <!-- inputs rigth -->
                 <div class="partRight_form_laMarca">
                     <div>
-                        <input class="inputs" type="text" placeholder="correo electronico" required>
+                        <input class="inputs" type="text" placeholder="correo electronico" required name="correo">
                     </div>
                     <div>
-                        <input class="inputs" type="number" placeholder="numero de documento" required>
+                        <input class="inputs" type="number" placeholder="numero de documento" required name="documento">
                     </div>
                     <!-- check - button -->
                     <div class="div_checkTerminSubmit">
@@ -165,7 +170,7 @@
                             <label for="checkForm_laMarca">Acepto terminos y condiciones</label>
                         </div>
                         <div class="div_ctnButtom">
-                            <button type="submit">suscribirme</button>
+                            <button type="submit" class="btnSubmit">suscribirme</button>
                         </div>
                     </div>
                 </div>
@@ -181,6 +186,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <!-- script index.js -->
+    <script src="./JS/index.js" type="module"></script>
 </body>
 
 </html>

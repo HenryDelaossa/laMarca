@@ -5,18 +5,15 @@
     flex-direction: column;
     margin-top: 3.5rem;
     text-align: center;
-
     h4 {
         text-transform: uppercase;
         font-size: 2.3rem;
         font-weight: 400;
         letter-spacing: 4px;
     }
-
     p {
         font-size: 1.2rem;
     }
-
     // formulario
     .form_main {
         display: flex;
@@ -24,15 +21,12 @@
         margin: 0 auto;
         width: 80%;
         margin-top: 2rem;
-
         // contenedor inputs izquierda
         .partLeft_form_laMarca {
             width: 50%;
-
             div {
                 width: 100%;
                 padding: .4rem;
-
                 // aqui inputs izquierda
                 .inputs {
                     width: 100%;
@@ -44,6 +38,14 @@
                     &:focus {
                         outline: 1px solid gray;
                     }
+                    &.inputSelect {
+                        background-image: url("/assets/arrow.png");
+                        background-repeat: no-repeat;
+                        background-position: right 10px center;
+                        -moz-appearance: none;
+                        -o-appearance: none;
+                        appearance: none;
+                    }
                 }
             }
         }
@@ -51,6 +53,7 @@
         // contenedor inputs derecha
         .partRight_form_laMarca {
             width: 50%;
+
             div {
                 width: 100%;
                 padding: .4rem;
@@ -76,22 +79,27 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
+
                 // contenedor checkbox term y cond
                 .div_ctnCheckbox {
                     text-align: left;
+
                     input {
                         width: min-content;
                     }
+
                     label {
                         text-decoration: underline;
                         margin-left: .5rem;
                     }
                 }
+
                 // contenedor button submit
                 .div_ctnButtom {
                     width: 40%;
+
                     button {
-                        @include botones (.2rem 1rem);
+                        @include botones (.2rem 1rem, 0 3px 5px $bgBlack);
                     }
                 }
 

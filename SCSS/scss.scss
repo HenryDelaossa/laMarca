@@ -8,6 +8,7 @@
 @import "./seccion2/responsiveSeccionDos";
 @import "./seccion3_form/seccionTresForm";
 @import "./seccion3_form/responsiveSeccionTresForm" ;
+@import "./modalValidForm/modalValid";
 @import "./footer/footer";
 
 
@@ -27,9 +28,10 @@ body {
 // para quitar flechitas a inputs type nuber
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
   margin: 0; 
-}
+} 
+input[type=number] { -moz-appearance:textfield; }
 // placeholders inputs
 input::-webkit-input-placeholder {
     text-transform: uppercase;

@@ -207,11 +207,18 @@
   .header_laMarca {
     padding: 0 3rem; }
     .header_laMarca .navbar .divCtn {
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
       .header_laMarca .navbar .divCtn .navbar-brand {
-        text-align: center; }
+        text-align: center;
+        margin-bottom: 20px; }
         .header_laMarca .navbar .divCtn .navbar-brand .img_logotipoNavbar {
           width: 180px; }
+      .header_laMarca .navbar .divCtn .collap .navbar-nav {
+        align-items: center;
+        margin-top: 1rem; }
+        .header_laMarca .navbar .divCtn .collap .navbar-nav .nav-item {
+          margin-bottom: 1rem; }
     .header_laMarca .div_infoHeader .ctn_div_infoHeader .ctn2_p-indicator_img-bgtext p {
       padding: 1rem; } }
 
@@ -506,6 +513,13 @@
           padding: .3rem; }
           .section3_main-form .form_main .partLeft_form_laMarca div .inputs:focus {
             outline: 1px solid gray; }
+          .section3_main-form .form_main .partLeft_form_laMarca div .inputs.inputSelect {
+            background-image: url("/assets/arrow.png");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            -moz-appearance: none;
+            -o-appearance: none;
+            appearance: none; }
     .section3_main-form .form_main .partRight_form_laMarca {
       width: 50%; }
       .section3_main-form .form_main .partRight_form_laMarca div {
@@ -541,6 +555,7 @@
             padding: 0.2rem 1rem;
             text-transform: uppercase;
             transition: .2s all;
+            box-shadow: 0 3px 5px #000000;
             cursor: pointer; }
             .section3_main-form .form_main .partRight_form_laMarca .div_checkTerminSubmit .div_ctnButtom button:hover {
               transform: scale(1.02); }
@@ -603,6 +618,52 @@
           width: 50%;
           margin: 0 auto; } }
 
+.modal_ok {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000077;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeinModal;
+  animation-duration: .5s;
+  animation-timing-function: linear; }
+  .modal_ok .innerDiv {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    background-color: #d5ab73;
+    box-shadow: 0px 0px 15px #000000;
+    border-radius: 20px;
+    opacity: 1; }
+    .modal_ok .innerDiv h4 {
+      text-align: center;
+      color: whitesmoke; }
+    .modal_ok .innerDiv button {
+      letter-spacing: 2px;
+      background-color: #df9b06;
+      border: none;
+      padding: 0.3rem;
+      text-transform: uppercase;
+      transition: .2s all;
+      box-shadow: 0 3px 5px #000000;
+      cursor: pointer; }
+      .modal_ok .innerDiv button:hover {
+        transform: scale(1.02); }
+
+@keyframes fadeinModal {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .footer_laMarca {
   width: 100%;
   background-color: #000000;
@@ -630,6 +691,9 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
 
 input::-webkit-input-placeholder {
   text-transform: uppercase;

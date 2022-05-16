@@ -1,11 +1,12 @@
 // para botones
-@mixin botones ($padding) {
+@mixin botones ($padding, $boxShadow) {
     letter-spacing: 2px;
     background-color: $bg1_botones;
     border: none;
     padding: $padding;
     text-transform: uppercase;
     transition: .2s all;
+    box-shadow: $boxShadow;
     cursor: pointer;
     &:hover {
         transform: scale(1.02);
