@@ -47,17 +47,20 @@
                         appearance: none;
                     }
                 }
+                // estilos caso de input no validos (validacion formulario index.js)
+                .inputsNoValid {
+                    @extend .inputs;
+                    outline: 1px solid red;
+                }
             }
         }
 
         // contenedor inputs derecha
         .partRight_form_laMarca {
             width: 50%;
-
             div {
                 width: 100%;
                 padding: .4rem;
-
                 // aqui inputs derecha
                 .inputs {
                     width: 100%;
@@ -69,6 +72,11 @@
                     &:focus {
                         outline: 1px solid gray;
                     }
+                }
+                // estilos caso de input no validos (validacion formulario index.js)
+                .inputsNoValid {
+                    @extend .inputs;
+                    outline: 1px solid red;
                 }
             }
 

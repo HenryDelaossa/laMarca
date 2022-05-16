@@ -505,34 +505,38 @@
       .section3_main-form .form_main .partLeft_form_laMarca div {
         width: 100%;
         padding: .4rem; }
-        .section3_main-form .form_main .partLeft_form_laMarca div .inputs {
+        .section3_main-form .form_main .partLeft_form_laMarca div .inputs, .section3_main-form .form_main .partLeft_form_laMarca div .inputsNoValid {
           width: 100%;
           background: lightgray;
           border: none;
           outline: none;
           padding: .3rem; }
-          .section3_main-form .form_main .partLeft_form_laMarca div .inputs:focus {
+          .section3_main-form .form_main .partLeft_form_laMarca div .inputs:focus, .section3_main-form .form_main .partLeft_form_laMarca div .inputsNoValid:focus {
             outline: 1px solid gray; }
-          .section3_main-form .form_main .partLeft_form_laMarca div .inputs.inputSelect {
+          .section3_main-form .form_main .partLeft_form_laMarca div .inputs.inputSelect, .section3_main-form .form_main .partLeft_form_laMarca div .inputSelect.inputsNoValid {
             background-image: url("/assets/arrow.png");
             background-repeat: no-repeat;
             background-position: right 10px center;
             -moz-appearance: none;
             -o-appearance: none;
             appearance: none; }
+        .section3_main-form .form_main .partLeft_form_laMarca div .inputsNoValid {
+          outline: 1px solid red; }
     .section3_main-form .form_main .partRight_form_laMarca {
       width: 50%; }
       .section3_main-form .form_main .partRight_form_laMarca div {
         width: 100%;
         padding: .4rem; }
-        .section3_main-form .form_main .partRight_form_laMarca div .inputs {
+        .section3_main-form .form_main .partRight_form_laMarca div .inputs, .section3_main-form .form_main .partRight_form_laMarca div .inputsNoValid {
           width: 100%;
           background: lightgray;
           border: none;
           outline: none;
           padding: .3rem; }
-          .section3_main-form .form_main .partRight_form_laMarca div .inputs:focus {
+          .section3_main-form .form_main .partRight_form_laMarca div .inputs:focus, .section3_main-form .form_main .partRight_form_laMarca div .inputsNoValid:focus {
             outline: 1px solid gray; }
+        .section3_main-form .form_main .partRight_form_laMarca div .inputsNoValid {
+          outline: 1px solid red; }
       .section3_main-form .form_main .partRight_form_laMarca .div_checkTerminSubmit {
         width: 100%;
         display: flex;

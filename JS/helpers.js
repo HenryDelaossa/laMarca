@@ -1,12 +1,13 @@
 // expresiones para validacion de valores
+// nombre: texto admite caracteres, length entre 5 y 40 caracteres
+// correo: formato correo electronico, "fuente externa"
+// telefono:  admite cadena de solo numeros entre 7 y 15 caracteres
+// documento:  admite cadena de solo numeros entre 6 y 15 caracteres
+
 const expValid = {
-    // texto admite caracteres, length entre 5 y 40 caracteres
     nombre: /^[a-zA-ZÀ-ÿ\s]{5,40}$/,
-    // formato correo electronico, "fuente externa"
     correo: /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/,
-    // admite cadena de solo numeros entre 7 y 15 caracteres
     telefono: /^\d{7,15}$/,
-    // admite cadena de solo numeros entre 6 y 15 caracteres
     documento: /^\d{6,12}$/
 }
 
@@ -34,47 +35,56 @@ export function isChecked(elementCheck) {
 // setea el obj "isPass" con sus valores en true o false: dichos valores sirven de llave para continuar con la validacion. (ver "index.js" linea 19)
 export default function formValid(e) {
     e.preventDefault()
-    console.log(Object.values(ifPass).every(e => e === true))
     switch (e.target.name) {
         case "nombre":
             if (expValid.nombre.test(e.target.value)) {
                 ifPass.nombre = true;
+                e.target.className = "inputs";
             } else {
                 ifPass.nombre = false;
+                e.target.className = "inputsNoValid";
             }
             break;
 
         case "correo":
             if (expValid.correo.test(e.target.value)) {
                 ifPass.correo = true;
+                e.target.className = "inputs";
 
             } else {
                 ifPass.correo = false;
+                e.target.className = "inputsNoValid"
             }
             break;
 
         case "telefono":
             if (expValid.telefono.test(e.target.value)) {
                 ifPass.telefono = true;
+                e.target.className = "inputs";
 
             } else {
                 ifPass.telefono = false;
+                e.target.className = "inputsNoValid"
             }
             break;
 
         case "selectForm":
             if (selectsOptions.selectedIndex) {
                 ifPass.tipoDocumento = true
+                e.target.className = "inputs";
             } else {
                 ifPass.tipoDocumento = false
+                e.target.className = "inputsNoValid"
             }
             break;
 
         case "documento":
             if (expValid.documento.test(e.target.value)) {
                 ifPass.documento = true;
+                e.target.className = "inputs";
             } else {
                 ifPass.documento = false;
+                e.target.className = "inputsNoValid"
             }
             break;
     }
