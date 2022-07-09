@@ -33,6 +33,11 @@ export function isChecked(elementCheck) {
 // funcion para validar los inputs, (ejecutada e evento keyup y blur a cada input)
 // valido por medio del metodo "test" las exxpresiones regulares asignadas a cada elemento y segun el test, 
 // setea el obj "isPass" con sus valores en true o false: dichos valores sirven de llave para continuar con la validacion. (ver "index.js" linea 19)
+/**
+ * It's a function that validates the form inputs and changes the class of the input to either "inputs"
+ * or "inputsNoValid" depending on whether the input is valid or not.
+ * @param e - is the event
+ */
 export default function formValid(e) {
     e.preventDefault()
     switch (e.target.name) {
